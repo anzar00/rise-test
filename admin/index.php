@@ -95,7 +95,7 @@ require '../config/db-con.php';
                                                     Name
                                                 </th>
                                                 <th>
-                                                    Father's / Guardain's name
+                                                    Father's name
                                                 </th>
                                                 <th>
                                                     Mobile
