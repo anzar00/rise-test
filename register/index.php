@@ -1,3 +1,8 @@
+<?php
+    require '../config/db-con.php';
+    require '../handlers/register.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,24 +36,30 @@
                             </div>
                             <h4>RTSE - August 28, 2022</h4>
                             <h6 class="font-weight-light">Info about test</h6>
-                            <form class="pt-3">
+                            <form class="pt-3" action="index.php" method="POST">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="name" placeholder="Student Name">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control form-control-lg" id="name" name = "name" placeholder="Student Name" required/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="f-name" placeholder="Father's / Guardian's Name">
+                                    <label for="FatherName">Father's / Guardian's aName</label>
+                                    <input type="text" class="form-control form-control-lg" id="f-name" name="f-name" placeholder="Father's / Guardian's Name" required/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="mobile" placeholder="Mobile Number">
+                                    <label for="mobile">Mobile Number</label>
+                                    <input type="text" class="form-control form-control-lg" id="mobile" name = "mobile" placeholder="Mobile Number" required/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control form-control-lg" id="email" name = "email" placeholder="Email" required/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="textarea" class="form-control form-control-lg" id="address" placeholder="Address">
+                                    <label for="address">Address</label>
+                                    <input type="textarea" class="form-control form-control-lg" id="address" name = "address" placeholder="Address" required/>
                                 </div>
                                 <div class="form-group">
-                                    <select class="form-control form-control-lg" id="district">
+                                    <label for="district">District</label>
+                                    <select class="form-control form-control-lg" id="district" name="district" required>
                                         <option>District</option>
                                         <option>Anantnag</option>
                                         <option>Bandipore</option>
@@ -74,26 +85,27 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="DOB">DOB</label>
-                                    <input type="date" class="form-control form-control-lg" id="DOB" placeholder="DOB">
+                                    <input type="date" class="form-control form-control-lg" id="DOB" name = "DOB" placeholder="DOB" required/>
                                 </div>
                                 <div class="form-group">
-                                    <label for="DOB">Class</label>
-                                    <input type="text" class="form-control form-control-lg" id="class" placeholder="e.g 11">
+                                    <label for="class">Class</label>
+                                    <input type="text" class="form-control form-control-lg" id="class" name = "class" placeholder="e.g 11" required/>
                                 </div>
                                 <div class="form-group">
-                                    <label for="DOB">Stram</label>
-                                    <input type="text" class="form-control form-control-lg" id="stream" placeholder="e.g Non-Medical">
+                                    <label for="stream">Stream</label>
+                                    <input type="text" class="form-control form-control-lg" id="stream" name = "stream" placeholder="e.g Non-Medical" required/>
                                 </div>
                                 <div class="form-group">
-                                    <label for="DOB">School Name</label>
-                                    <input type="text" class="form-control form-control-lg" id="school" placeholder="e.g Burn Hall School">
+                                    <label for="school">School Name</label>
+                                    <input type="text" class="form-control form-control-lg" id="school" name = "school" placeholder="e.g Burn Hall School" required/>
                                 </div>
                                 <div class="mt-3">
                                     <input class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit" name="register" value="Register Now">
                                 </div>
-                                <!-- <div class="text-center mt-4 font-weight-light">
-                                    Already have an account? <a href="login.html" class="text-primary">Login</a>
-                                </div> -->
+                                <div class="text-center mt-4 font-weight-light">
+                                    <?php if(in_array("Already registered with this mail, try using another email id.</br>",$error_array)) echo "<span style='color: red'>Already registered with this mail, try using another email id.</span></br>"; ?>
+                                    <?php if(in_array("<span style='color: #14C800;'>Registered Successfully!!</span><br>", $error_array)) echo "<span style='color: #14C800;'>Registered Successfully!!</span><br>"; ?>
+                                </div>
                             </form>
                         </div>
                     </div>
