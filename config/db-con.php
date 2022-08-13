@@ -9,7 +9,7 @@ if (!isset($_SESSION)) {
 
 $timezone = date_default_timezone_set("Indian/Mauritius"); // To set default timezone
 
-$con = mysqli_connect("localhost", "root", "", "rise-test"); // Connection variable for connecting to databse
+$con = mysqli_connect("sql.freedb.tech", "freedb_mydbuser", "7rZJP&MKSDk*Ua*", "freedb_rise-test"); // Connection variable for connecting to databse
 
 
 if (mysqli_connect_errno()) {
