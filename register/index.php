@@ -103,8 +103,8 @@
                                     <input class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" type="submit" name="register" value="Register Now">
                                 </div>
                                 <div class="text-center mt-4 font-weight-light">
+                                    <?php if(in_array("<span style='color: #14C800;'>Registered Successfully!</span><br>", $error_array)) echo "<span style='color: #14C800;'>Registered Successfully!!</span><br>"; ?>
                                     <?php if(in_array("Already registered with this mail, try using another email id.</br>",$error_array)) echo "<span style='color: red'>Already registered with this mail, try using another email id.</span></br>"; ?>
-                                    <?php if(in_array("<span style='color: #14C800;'>Registered Successfully!!</span><br>", $error_array)) echo "<span style='color: #14C800;'>Registered Successfully!!</span><br>"; ?>
                                 </div>
                             </form>
                         </div>

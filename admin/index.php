@@ -1,4 +1,9 @@
 <?php
+session_start();
+//Checking User Logged or Not
+if(empty($_SESSION['username'])){
+    header('location: ./login.php');
+}
 require '../config/db-con.php';
 ?>
 

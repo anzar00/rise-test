@@ -76,5 +76,11 @@ if(isset($_POST['register'])){
         $query = mysqli_query($con, "INSERT INTO applicant VALUES ('', '$name', '$f_name', '$mobile', '$email', '$address', '$district', '$DOB', '$class', '$stream', '$school')");
 		array_push($error_array, "<span style='color: #14C800;'>Registered Successfully!</span><br>");
     }
+    else{
+        echo "<span style='color: red;'>Error:</span><br>";
+        foreach ($error_array as $error) {
+            echo $error;
+        }
+    }
 
 	}
