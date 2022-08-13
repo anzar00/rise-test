@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>RiSE Test</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="./vendors/feather/feather.css">
-    <link rel="stylesheet" href="./vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="./vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../vendors/feather/feather.css">
+    <link rel="stylesheet" href="../vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="./css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="../css/vertical-layout-light/style.css">
     <!-- endinject -->
-    <link rel="shortcut icon" href="./images/fav.ico" />
+    <link rel="shortcut icon" href="../images/fav.ico" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                     <div class="col-lg-4 mx-auto">
                         <div class="auth-form-light text-left py-5 px-4 px-sm-5">
                             <div class="brand-logo">
-                                <img src="./images/Rise Logo.png" alt="logo">
+                                <img src="../images/Rise Logo.png" alt="logo">
                             </div>
                             <h4>RTSE - August 28, 2022</h4>
                             <h6 class="font-weight-light">Info about test</h6>
@@ -105,16 +105,16 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="./vendors/js/vendor.bundle.base.js"></script>
+    <script src="../vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
     <!-- End plugin js for this page -->
     <!-- inject:js -->
-    <script src="./js/off-canvas.js"></script>
-    <script src="./js/hoverable-collapse.js"></script>
-    <script src="./js/template.js"></script>
-    <script src="./js/settings.js"></script>
-    <script src="./js/todolist.js"></script>
+    <script src="../js/off-canvas.js"></script>
+    <script src="../js/hoverable-collapse.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/settings.js"></script>
+    <script src="../js/todolist.js"></script>
     <!-- endinject -->
 </body>
 
